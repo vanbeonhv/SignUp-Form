@@ -87,7 +87,6 @@ function checkPasswordMatch(password, confirmPassword) {
   }
   return isPasswordMatch;
 }
-//Chưa thêm preventDefault cho form. Để xem code thế nào đã
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let isEmptyError = checkEmptyError([
@@ -103,3 +102,4 @@ form.addEventListener("submit", (e) => {
     let isPasswordMatch = checkPasswordMatch(password, confirmPassword);
   }
 });
+console.log(isEmailError);
